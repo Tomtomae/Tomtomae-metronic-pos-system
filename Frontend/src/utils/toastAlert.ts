@@ -23,4 +23,10 @@ export const showToast = (icon: ToastType, title: string) => {
     icon: icon,
     title: title
   })
+} 
+export const toastAlert = (message: string, icon: 'success' | 'error' | 'warning' | 'info') => {
+  Toast.fire({
+    icon: icon,
+    title: message,
+  })
 }
